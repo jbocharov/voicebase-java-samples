@@ -24,13 +24,13 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 
-public class VoicebaseV3MinimalClientImpl implements VoiceBase {
+public class BaseVoicebaseV3Client implements VoiceBase {
 
-    public VoicebaseV3MinimalClientImpl() {
+    public BaseVoicebaseV3Client() {
         initialize(null);
     }
 
-    public VoicebaseV3MinimalClientImpl(String bearerToken) {
+    public BaseVoicebaseV3Client(String bearerToken) {
         initialize(bearerToken);
     }
 

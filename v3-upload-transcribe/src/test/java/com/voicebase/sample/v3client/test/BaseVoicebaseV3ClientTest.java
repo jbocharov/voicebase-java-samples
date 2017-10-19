@@ -2,7 +2,7 @@ package com.voicebase.sample.v3client.test;
 
 import com.voicebase.sample.v3client.ApiException;
 import com.voicebase.sdk.v3.VoiceBase;
-import com.voicebase.sample.v3client.VoicebaseV3MinimalClientImpl;
+import com.voicebase.sample.v3client.BaseVoicebaseV3Client;
 
 import com.voicebase.sample.v3client.model.VbMedia;
 import com.voicebase.sample.v3client.model.VbStatusEnum;
@@ -15,11 +15,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
-public class VoicebaseV3MinimalClientTest {
+public class BaseVoicebaseV3ClientTest {
 
-    public VoicebaseV3MinimalClientTest() throws IOException {
+    public BaseVoicebaseV3ClientTest() throws IOException {
         final String bearerToken = slurpFile(VOICEBASE_BEARER_TOKEN_FILE).trim();
-        this.client = new VoicebaseV3MinimalClientImpl(bearerToken);
+        this.client = new BaseVoicebaseV3Client(bearerToken);
     }
 
     public void testGetExistingMedia() throws ApiException {
