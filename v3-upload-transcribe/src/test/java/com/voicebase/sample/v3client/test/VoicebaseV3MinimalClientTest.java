@@ -1,7 +1,7 @@
 package com.voicebase.sample.v3client.test;
 
 import com.voicebase.sample.v3client.ApiException;
-import com.voicebase.sample.v3client.VoiceBaseV3MinimalClient;
+import com.voicebase.sdk.v3.VoiceBase;
 import com.voicebase.sample.v3client.VoicebaseV3MinimalClientImpl;
 
 import com.voicebase.sample.v3client.model.VbMedia;
@@ -76,7 +76,7 @@ public class VoicebaseV3MinimalClientTest {
         return new String(Files.readAllBytes(Paths.get(path)));
     }
 
-    protected VoiceBaseV3MinimalClient client;
+    protected VoiceBase client;
 
     protected final static String VOICEBASE_BEARER_TOKEN_FILE = ".voicebase-bearer-token";
 }

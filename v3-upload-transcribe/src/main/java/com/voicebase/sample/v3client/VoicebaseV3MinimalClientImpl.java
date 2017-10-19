@@ -13,6 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import com.voicebase.sdk.v3.VoiceBase;
 import org.apache.http.*;
 import org.apache.http.client.*;
 import org.apache.http.client.methods.HttpGet;
@@ -23,7 +24,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 
-public class VoicebaseV3MinimalClientImpl implements VoiceBaseV3MinimalClient {
+public class VoicebaseV3MinimalClientImpl implements VoiceBase {
 
     public VoicebaseV3MinimalClientImpl() {
         initialize(null);

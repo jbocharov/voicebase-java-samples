@@ -1,13 +1,15 @@
-package com.voicebase.sample.v3client;
+package com.voicebase.sdk.v3;
 
 import java.util.List;
+
+import com.voicebase.sample.v3client.ApiException;
 import com.voicebase.sample.v3client.model.VbMedia;
 import com.voicebase.sample.v3client.model.VbConfiguration;
 import com.voicebase.sample.v3client.model.VbMetadata;
 
 import java.io.File;
 
-public interface VoiceBaseV3MinimalClient {
+public interface VoiceBase {
 
     /**
      * Retrieve transcript and analytical results from a media record
