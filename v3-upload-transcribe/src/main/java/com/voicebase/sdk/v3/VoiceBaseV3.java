@@ -27,4 +27,8 @@ public class VoiceBaseV3 extends BaseVoicebaseV3Client implements VoiceBase {
     public static void print(String value) {
         System.out.println(value);
     }
+
+    public static void print(Object value) {
+        System.out.println(value);
+    }
 }

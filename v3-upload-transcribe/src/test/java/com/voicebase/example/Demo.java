@@ -9,26 +9,23 @@ import org.junit.Test;
 
 import java.io.File;
 
-
 public class Demo {
 
-    @Test
-    public void demo() throws Exception {
+    @Test public void demo() throws Exception {
 
         VoiceBase v3 = new VoiceBaseV3();
 
         VbMedia media = v3.postMedia(new File("test.mp3"));
-        print("mediaId", media.getMediaId());
+        print(media.getMediaId());
+
 
         while (media.getStatus() != VbStatusEnum.FINISHED) {
-            print("status", media.getStatus());
-            Thread.sleep(1000);
+            print(media.getStatus());
             media = v3.getMediaById(media.getMediaId());
         }
 
-        print("result", media);
+        print(media);
 
     }
-
 
 }
